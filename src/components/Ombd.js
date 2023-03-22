@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import MovieCard from "../MovieCard";
+/* import MovieCard from "../MovieCard"; */
 import SearchIcon from "../search.svg";
 
 import "../app.css";
@@ -13,7 +13,7 @@ const Omdb = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        searchMovies("Spiderman");
+        searchMovies("");
       }, []);
 
     const searchMovies = async (title) => {
@@ -25,7 +25,7 @@ const Omdb = () => {
 
     return (
         <div className="app">
-            <h1>MovieLand</h1>
+            <h1>Search4Movies</h1>
 
             <div className="search">
                 <input 

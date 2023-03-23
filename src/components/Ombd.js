@@ -1,10 +1,13 @@
+/* to fetch data from the API when the components load, I will need to use the useEffect hook in React. */
+
 import React, { useState, useEffect } from "react";
 
+
 /* import MovieCard from "../MovieCard"; */
-/* import SearchIcon from "../search.svg"; */
 
 import "../index";
 
+//I have got my own API key which is fbdf1d80 to be added to API url variable below
 const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
 
 
@@ -12,6 +15,7 @@ const Omdb = () => {
     const [movies, setMovies ] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
+    /* below is the useEffect function which will call the useEffect hook for searching the movies and it will then store it in an array, so I have added the blank array '[]' where the results will be stored */
     useEffect(() => {
         searchMovies("");
       }, []);

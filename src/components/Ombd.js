@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 
-/* import MovieCard from "../MovieCard"; */
+import MovieCard from "../MovieCard";
 
 import "../index";
 
@@ -15,15 +15,16 @@ const Omdb = () => {
     const [movies, setMovies ] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    /* below is the useEffect function which will call the useEffect hook for searching the movies and it will then store it in an array, so I have added the blank array '[]' where the results will be stored */
+    /* below is the useEffect function which will call the useEffect hook for fetching the movies and it will then store it in an array, so I have added the blank array '[]' where the results will be stored */
     useEffect(() => {
         searchMovies("");
       }, []);
 
+      /* below I will create the function to search from movies using the async arrow function which will allow us to search for the movie by it's title. This will then response variable which will call the API using the api url and the title search input by the user. */
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
+        /* */
         const data = await response.json();
-
         setMovies(data.Search);
     }
 

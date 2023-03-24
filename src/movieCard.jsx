@@ -1,20 +1,21 @@
 import React from 'react';
 
-const MovieCard = () => {
-    return(
-        <div className = "movie">
-            <div>
-                <p>{movie1.Year}</p>
-            </div>
+// below is the movie card which will be used to dynamically generate the cards to populate the page with the use of the API.
 
-            <div>
-                <img src={movie1.Poster !== 'N/A' ? Poster : "https://via.placeholder.com/400"} alt = {Title}/>
-            </div>
-
-            <div>
-                <span>{Type}</span>
-                <h3>{Title}</h3>
-            </div>
-        </div>   
-    );
+const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
+  return (
+    <div className="movie" key={imdbID}>
+      <div>
+        <p>This is a {Type}.</p>
+        <p>It was released: {Year}.</p>
+        <p>And the IMDB ID: {imdbID}</p>
+      </div>
+      <div>
+        <img src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/300"} alt={Title} />
+      </div>
+      <div>
+        <h3>{Title} - {Type}</h3>
+      </div>
+    </div>
+  );
 }

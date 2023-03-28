@@ -241,7 +241,14 @@ label {
   margin-left: 25px;
   max-width: 550px;
 }
-    
+
+/* ----------------Small Logo-------------------- */
+.smallLogo {
+  height: 60px;
+  width: 90px;
+  background: none;
+  margin-bottom: 15px;
+}
 
 /* --------------------Media Screens--------------------------- */
 
@@ -850,3 +857,4 @@ label {
     margin: 1rem;
   }
 } */
+

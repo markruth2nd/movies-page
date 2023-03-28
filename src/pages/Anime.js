@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 
-import MovieCard from "../MovieCard";
+import MovieCard from "../component/movieCard";
 import whiteSearch from "../images/whiteSearch.svg";
 
-import "../app.css";
+import "../App.css";
 
 const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
 

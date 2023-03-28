@@ -4,14 +4,14 @@ import Omdb from "./component/Omdb";
 import Comedies from './pages/Comedies';
 import Anime from './pages/Anime';
 import MovieRequest from './pages/MovieRequest';
-import Header from './component/Header';
+// import Header from './component/Header';
 import Navbar from './component/Navbar';
 
 
 function App() {
     return (
     <Router>
-        <Header />
+        {/* <Header /> */}
         <Navbar />
         <Routes>
             <Route path="/" element={<Omdb />} />
@@ -23,3 +23,5 @@ function App() {
 )}
 
 export default App;
+
+

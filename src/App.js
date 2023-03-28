@@ -1,15 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-/* import Omdb from "./component/Omdb"; */
 import Omdb from "./component/Omdb";
 import Comedies from './pages/Comedies';
 import Anime from './pages/Anime';
 import MovieRequest from './pages/MovieRequest';
+import Header from './component/Header';
 import Navbar from './component/Navbar';
+
 
 function App() {
     return (
     <Router>
+        <Header />
+        <Navbar />
         <Routes>
             <Route path="/" element={<Navbar />} />
             <Route path="/" element={<Omdb />} />
@@ -19,4 +22,5 @@ function App() {
         </Routes>
     </Router>
 )}
+
 export default App;

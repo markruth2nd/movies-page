@@ -14,7 +14,6 @@ function App() {
         <Header />
         <Navbar />
         <Routes>
-            <Route path="/" element={<Navbar />} />
             <Route path="/" element={<Omdb />} />
             <Route path="/comedies" element={<Comedies />} />
             <Route path="/anime" element={<Anime />} />

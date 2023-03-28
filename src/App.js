@@ -5,7 +5,7 @@ import Comedies from './pages/Comedies';
 import Anime from './pages/Anime';
 import MovieRequest from './pages/MovieRequest';
 import Header from './component/Header';
-
+import Navbar from './component/Navbar';
 
 function App() {
     return (

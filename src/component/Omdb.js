@@ -1,9 +1,10 @@
+/* to fetch data from the API when the components load, I will need to use the useEffect hook in React. */
 import React, { useState, useEffect } from "react";
 import MovieCard from "./movieCard";
 import whiteSearch from "../images/whiteSearch.svg";
 
 import "../App";
-
+//I have got my own API key which is fbdf1d80 to be added to API url variable below
 const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
 
 
@@ -30,7 +31,9 @@ const Omdb = () => {
                 id="movieSearh"
                 placeholder="Type Movie..." 
                 value={searchTerm} 
-                onChange={(e) => setSearchTerm(e.target.value)} />
+                onChange={(e) => setSearchTerm(e.target.value)} 
+                /* the on keyDown below will cause searches to happen while typing your search to speed the search and it will also allow the enter key to carry out the search instead of just using the onClick. This doesn't work as I would hope it would so would look into perfecting this in the future */
+                onKeyDown={() => searchMovies(searchTerm)}/>
                 <img src={whiteSearch} id="Icon" alt="Icon" 
                 onClick={() => searchMovies(searchTerm)}/>
             </div>

@@ -1,38 +1,852 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: var(--font-roboto);
+  background: #0a0c79;
+  background: -webkit-linear-gradient(0deg, #0a0c79 0%, #000000 100%);
+  background: linear-gradient(0deg, #0a0c79 0%, #000000 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: bottom;
+  height: 100vh; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------------------Nav-Bar------------------ */
+
+/* ------------------Search bar-------------------------- */
+
+#movieSearh {
+  margin-right:auto;
+  margin-left:auto;
+  width:400px;
+  padding: 7px;
+  border-radius: 30px;
+  box-shadow: 0 0 45px 0 #ffffff, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+#Icon{
+  width: 7%;
+  color: white;
+  margin-left: -125px;
+  filter: brightness(0) invert(1);
+}
+
+.container {
+  display: flex;
+  margin-left: -50px;
+  margin-bottom: 0%;
+  margin-top: -55px;
+}
+
+/* --------------------logo-------------------------- */
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* --------------------Main--------------------------- */
+
+.app {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieContainer {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------Movie Card------------------------------ */
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #FFFFFF;
+  background-color: #1986ce9c;
+}
+.movie:hover {
+  box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
+  transform: scale(1.10, 1.10);
+  background-color: #0046746c;
+}
+
+.movie div:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+}
+
+.movie div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+.movie div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #1986ce9c;
+  padding: 16px 24px 24px 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.movie div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.movie div:nth-of-type(3) h3 {
+    margin-top: 5px;
+    font-family: "Roboto Slab", serif;
+    color: #FFFFFF;
+}
+
+.movie:hover div:nth-of-type(2) {
+  height: 100%;
+  background-color: #1986ce9c;
+  opacity: 0.1;
+}
+
+.movie:hover div:nth-of-type(3) {
+  background-color: transparent;
+}
+
+.movie:hover div:nth-of-type(1) {
+  opacity: 1;
+}
+
+/* ----------------Movie Request---------------------- */
+
+form {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
+  margin-left: 25px;
+  margin-top: 2%;
+  width: 50%;
+}
+
+input {
+  width: 50%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  width: 35%;
+  cursor: pointer;
+  background: rgb(0, 119, 255); 
   color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  max-width: 520px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  max-width: 100%;
+  width: 50%;
+  max-height: 100px;
+  padding: 50px;
+  outline: none;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+label {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+  max-width: 520px;
+}
+
+
+.logoRequestPage {
+  margin-top: 5%;
+  position: relative;
+  margin-right: 6px;
+  width: 100%;
+  max-width: 800px;
+  display: inline;
+  float: right;
+}
+
+
+.requestHeader {
+  font-size: 500%;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 25px;
+
+}
+
+.requestInfo {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 25px;
+  max-width: 550px;
+}
+    
+
+/* --------------------Media Screens--------------------------- */
+
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .movieContainer {
+    margin-top: 2rem;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+}
+
+/*---------Request page COME BACK TO THIS ----------*/
+
+
+/* @media screen and (width: 1100px){
+  .requestHeader {
+    font-size: 450%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-right: 20px;
+  }
+} */
+
+/* @media screen and (min-width: 350px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 1rem;
+    width: 90%;
+    max-width: 300px;
+    display: inline;
+  }
+
+  .requestHeader {
+    font-size: 250%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    max-width: 390px;
+  }
+  
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  textarea {
+    max-width: 100%;
+    width: 85%;
+    max-height: 100px;
+    padding: 50px;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  input {
+    width: 85%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+  }
+
+
+  label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    max-width: 520px;
+  }
+
+  input[type="submit"] {
+    margin-top: 2rem;
+    width: 50%;
+    cursor: pointer;
+    background: rgb(0, 119, 255); 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 520px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+    display: inline;
+  }
+
+  .requestHeader {
+    font-size: 290%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 450px;
+  }
+  
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  textarea {
+    max-width: 100%;
+    width: 85%;
+    max-height: 100px;
+    padding: 50px;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  input {
+    width: 85%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+  }
+
+
+  label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    max-width: 520px;
+  }
+
+  input[type="submit"] {
+    margin-top: 2rem;
+    width: 50%;
+    cursor: pointer;
+    background: rgb(0, 119, 255); 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 520px;
+    border: none;
+  }
+}
+
+
+@media screen and (min-width: 450px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+    display: inline;
+  }
+
+}
+
+
+ @media screen and (min-width: 550px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+    display: inline;
+  }
+
+ }
+
+
+ @media screen and (min-width: 600px) and (max-width: 769px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 35px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 450px;
+    display: inline;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 550px;
+  }
+
+  .requestHeader {
+    font-size: 300%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+
+ 
+ }
+
+
+ @media screen and (min-width: 600px) and (max-width: 769px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 35px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 450px;
+    display: inline;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 550px;
+  }
+
+  .requestHeader {
+    font-size: 300%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+
+ 
+ }
+
+
+ @media screen and (min-width: 665px) and (max-width: 769px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 450px;
+    display: inline;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 650px;
+  }
+
+  .requestHeader {
+    font-size: 350%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+  }
+
+
+ 
+ }
+
+ @media screen and (min-width: 694px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 450px;
+    display: inline;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 650px;
+  }
+
+  .requestHeader {
+    font-size: 370%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+  }
+
+
+ 
+ }
+
+
+ @media screen and (min-width: 694px) {
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 450px;
+    display: inline;
+  }
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 650px;
+  }
+
+  .requestHeader {
+    font-size: 370%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+  }
+
+
+ 
+ }
+
+ @media screen and (min-width: 694px) {
+ 
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 500px;
+    display: inline;
+    float: right;
+  }
+  
+  
+  
+
+  .requestInfo {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.4rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 650px;
+  }
+
+  .requestHeader {
+    font-size: 370%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+   
+  }
+
+ }
+
+ @media screen and (min-width: 745px) {
+ 
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-right: 6px;
+    width: 100%;
+    max-width: 800px;
+    display: inline;
+    float: right;
+  }
+  
+  
+  .requestHeader {
+    font-size: 500%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+
+  }
+
+  .requestInfo {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+    max-width: 550px;
+  }
+
+ }
+
+ @media screen and (min-width: 1000px) {
+ 
+  .logoRequestPage {
+    margin-top: 5%;
+    position: relative;
+    margin-left: 16px;
+    width: 100%;
+    max-width: 500px;
+    display: inline;
+    float: right;
+  }
+  
+  
+  .requestHeader {
+    font-size: 400%;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+
+  }
+
+  .requestInfo {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 25px;
+    max-width: 550px;
+  }
+
+  form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 2%;
+    width: 50%;
+  }
+  
+      input {
+        width: 50%;
+        height: 35px;
+        padding: 7px;
+        outline: none;
+        border-radius: 5px;
+      }
+  
+      input[type="submit"] {
+        margin-top: 2rem;
+        width: 35%;
+        cursor: pointer;
+        background: rgb(0, 119, 255); 
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        max-width: 520px;
+        border: none;
+      }
+  
+      textarea {
+        max-width: 100%;
+        width: 50%;
+        max-height: 100px;
+        padding: 50px;
+        outline: none;
+        border-radius: 5px;
+      }
+  
+      label {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2em;
+        color: white;
+        font-weight: bold;
+        max-width: 520px;
+      }
+  
+  
+      .logoRequestPage {
+        margin-top: 5%;
+        position: relative;
+        margin-right: 6px;
+        width: 100%;
+        max-width: 800px;
+        display: inline;
+        float: right;
+      }
+
+ } */
+
+
+
+
+/* @media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .movieContainer {
+    margin-top: 2rem;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+} */

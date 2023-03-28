@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 
-import MovieCard from "./MovieCard";
+import MovieCard from "../MovieCard";
 
 import "../index";
 
@@ -38,7 +38,7 @@ const Omdb = () => {
                 value={searchTerm} 
                 onChange={(e) => setSearchTerm(e.target.value)} />
 
-                <img src={SearchIcon} alt="search" 
+                <img src={""} alt="search" 
                 onClick={() => searchMovies(searchTerm)}/>
             </div>
 

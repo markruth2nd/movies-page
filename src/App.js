@@ -5,6 +5,7 @@ import Comedies from './pages/Comedies';
 import Anime from './pages/Anime';
 import MovieRequest from './pages/MovieRequest';
 import Header from './component/Header';
+import Navbar from './component/Navbar';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Navbar />
         <Routes>
+            <Route path="/" element={<Navbar />} />
             <Route path="/" element={<Omdb />} />
             <Route path="/comedies" element={<Comedies />} />
             <Route path="/anime" element={<Anime />} />

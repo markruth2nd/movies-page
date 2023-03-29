@@ -24,6 +24,7 @@ const Games = () => {
                 /* the below function is replacing the width & height in the current fetched box_art_url images size with the sizes I want artwork to display in my project*/
                 let newURL = game.box_art_url.replace('{width}', '200').replace('{height}', '200')
                 game.box_art_url = newURL /* this is my new generated url with the sizes I have chosen */
+                return[]
             }) //the below is my state update
             setGames(response.data.data)
             console.log(finalArray)
@@ -39,7 +40,7 @@ const Games = () => {
             /* all classNames below are labelled in bootstrap format so that I didn't have to worry about too much CSS in this project but I intend to try refactor this to match the Movies section following the project, I used bootstrap to show I could use as many UI's/libraries as possible for marks only*/
                 <div className="col-lg-4 col-md-6 col-sm-12 mt-5"> {/* this is setting the page up as column based to make is better for mobile as well as desktop */}
                     <div className="game-card"> {/* this card will display the box art url as well as a button with a link which will take you the the page where you can view the streams. I will not have enough time to work on the page where to view the stream but the button will at least take you to the link */}
-                        <img className="game-card-img-top" src={game.box_art_url}  />
+                        <img className="game-card-img-top" src={game.box_art_url} alt="" />
                             <div className="card-body">
                                     <button className="btn btn-success">Watch:
                                         <Link className="link" to={{pathname: "game/" + game.name, state: { gameID: game.id}

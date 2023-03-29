@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+body {
+  padding: 10px;
+  }
+  
+  .App {
+      font-family: sans-serif;
+      text-align: center;
+  }
+  /* the below .link are slight amendments to my shards-ui bootsrap to fit the theme of our project */
+  .link {
+      color: black;
+  }
+  .link:hover {
+      color: rgb(255, 255, 255);
+  }

@@ -1,28 +1,28 @@
-/* to fetch data from the API when the components load, I will need to use the useEffect hook in React. */
 import React, { useState, useEffect } from "react";
-import MovieCard from "./movieCard";
+
+
+import MovieCard from "../component/movieCard";
 import whiteSearch from "../images/whiteSearch.svg";
 
-import "../App";
-//I have got my own API key which is fbdf1d80 to be added to API url variable below
-const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
+import "../App.css";
+
+const API_URL = 'https://www.omdbapi.com/?apikey=fbdf1d80'
 
 
-const Omdb = () => {
+const Anime = () => {
     const [movies, setMovies ] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+
+    useEffect(() => {
+        searchMovies("fast and furious");
+      }, []);
+
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
 
         setMovies(data.Search);
     }
-    useEffect(() => {
-        
-        searchMovies("fast and furious");
-      }, []);
-
-    
 
     return (
         <div className="app">
@@ -32,9 +32,7 @@ const Omdb = () => {
                 id="movieSearh"
                 placeholder="Type Movie..." 
                 value={searchTerm} 
-                onChange={(e) => setSearchTerm(e.target.value)} 
-                /* the on keyDown below will cause searches to happen while typing your search to speed the search and it will also allow the enter key to carry out the search instead of just using the onClick. This doesn't work as I would hope it would so would look into perfecting this in the future */
-                onKeyDown={() => searchMovies(searchTerm)}/>
+                onChange={(e) => setSearchTerm(e.target.value)} />
                 <img src={whiteSearch} id="Icon" alt="Icon" 
                 onClick={() => searchMovies(searchTerm)}/>
             </div>
@@ -42,8 +40,8 @@ const Omdb = () => {
         {movies?.length > 0
             ? (
             <div className="movieContainer">
-            {movies.map((movie, index) => (
-                <MovieCard movie={movie} key={index} />
+            {movies.map((movie) => (
+                <MovieCard movie={movie} />
             ))}
             </div>
             ) : (
@@ -55,4 +53,4 @@ const Omdb = () => {
     );
 };
 
-export default Omdb
+export default Anime

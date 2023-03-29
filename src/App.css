@@ -305,6 +305,10 @@ label {
 /* --------------------Media Screens--------------------------- */
 
 /* ---------------- GAMES CSSS ---------------- */
+
+.gameTitle{
+  color: #898bc8a4;
+}
 .game-card{
   margin-left: 15px;
   margin-bottom: 15px;
@@ -331,7 +335,12 @@ label {
   /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
 }
 .link {
-  color: black;
+  color: rgb(14, 8, 194);
+  cursor: pointer;
+  font-weight: bold;
+}
+.link:hover {
+  color: white;
   cursor: pointer;
 }
 .btn-success {

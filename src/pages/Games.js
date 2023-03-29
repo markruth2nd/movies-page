@@ -32,7 +32,7 @@ const Games = () => {
     //below is the html which will generated on the page using the above generated data
     return (
         <div className="game">
-        <h1>Popular Games</h1><div className="game-container">
+        <h1 className="gameTitle">Popular Game Streams</h1><div className="game-container">
             {/* Below is giving me access the the games data I fetched in my const games function above and use the .map to use the array to create elements dynamically */}
         {games.map(game => (
             /* all classNames below are labelled in bootstrap format so that I didn't have to worry about too much CSS in this project but I intend to try refactor this to match the Movies section following the project, I used bootstrap to show I could use as many UI's/libraries as possible for marks only*/

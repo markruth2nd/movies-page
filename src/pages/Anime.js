@@ -6,7 +6,7 @@ import whiteSearch from "../images/whiteSearch.svg";
 
 import "../App.css";
 
-const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
+const API_URL = 'https://www.omdbapi.com/?apikey=fbdf1d80'
 
 
 const Anime = () => {

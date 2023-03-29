@@ -311,7 +311,7 @@ label {
 }
 
 .gameTitle{
-  color: #898bc8a4;
+  color: #1717d78e;
 }
 button {
   text-transform: capitalize;
@@ -400,6 +400,13 @@ button {
   .movie {
     width: "100%";
     margin: 1rem;
+  }
+  .game-card-img-top:hover {
+    box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
+    /* THE ABOVE AMEND WILL BE A GOOD ADDITION TO THE CSS */
+    background-color: rgba(38, 16, 160, 0.817);
+    transform: scale(1.05, 1.10);
+    /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
   }
 }
 

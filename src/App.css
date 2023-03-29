@@ -295,406 +295,8 @@ label {
 /*---------Request page COME BACK TO THIS ----------*/
 
 
-/* @media screen and (width: 1100px){
-  .requestHeader {
-    font-size: 450%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    margin-right: 20px;
-  }
-} */
-
-/* @media screen and (min-width: 350px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 20px;
-    margin-bottom: 1rem;
-    width: 90%;
-    max-width: 300px;
-    display: inline;
-  }
-
-  .requestHeader {
-    font-size: 250%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    margin-right: 20px;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    max-width: 390px;
-  }
+@media  screen and (min-width: 1300px) and (max-width: 1500px) {
   
-  form {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    margin-left: 25px;
-    margin-top: 2%;
-    width: 100%;
-  }
-
-  textarea {
-    max-width: 100%;
-    width: 85%;
-    max-height: 100px;
-    padding: 50px;
-    outline: none;
-    border-radius: 5px;
-  }
-
-  input {
-    width: 85%;
-    height: 35px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-  }
-
-
-  label {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-    max-width: 520px;
-  }
-
-  input[type="submit"] {
-    margin-top: 2rem;
-    width: 50%;
-    cursor: pointer;
-    background: rgb(0, 119, 255); 
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 520px;
-    border: none;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 769px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 20px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 400px;
-    display: inline;
-  }
-
-  .requestHeader {
-    font-size: 290%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 450px;
-  }
-  
-  form {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    margin-left: 25px;
-    margin-top: 2%;
-    width: 100%;
-  }
-
-  textarea {
-    max-width: 100%;
-    width: 85%;
-    max-height: 100px;
-    padding: 50px;
-    outline: none;
-    border-radius: 5px;
-  }
-
-  input {
-    width: 85%;
-    height: 35px;
-    padding: 7px;
-    outline: none;
-    border-radius: 5px;
-  }
-
-
-  label {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-    max-width: 520px;
-  }
-
-  input[type="submit"] {
-    margin-top: 2rem;
-    width: 50%;
-    cursor: pointer;
-    background: rgb(0, 119, 255); 
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 520px;
-    border: none;
-  }
-}
-
-
-@media screen and (min-width: 450px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 20px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 400px;
-    display: inline;
-  }
-
-}
-
-
- @media screen and (min-width: 550px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 40px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 400px;
-    display: inline;
-  }
-
- }
-
-
- @media screen and (min-width: 600px) and (max-width: 769px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 35px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 450px;
-    display: inline;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 550px;
-  }
-
-  .requestHeader {
-    font-size: 300%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-
- 
- }
-
-
- @media screen and (min-width: 600px) and (max-width: 769px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 35px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 450px;
-    display: inline;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 550px;
-  }
-
-  .requestHeader {
-    font-size: 300%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-
- 
- }
-
-
- @media screen and (min-width: 665px) and (max-width: 769px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 50px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 450px;
-    display: inline;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 650px;
-  }
-
-  .requestHeader {
-    font-size: 350%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-
-  }
-
-
- 
- }
-
- @media screen and (min-width: 694px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 50px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 450px;
-    display: inline;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 650px;
-  }
-
-  .requestHeader {
-    font-size: 370%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-
-  }
-
-
- 
- }
-
-
- @media screen and (min-width: 694px) {
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 10px;
-    margin-bottom: 1rem;
-    width: 100%;
-    max-width: 450px;
-    display: inline;
-  }
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 650px;
-  }
-
-  .requestHeader {
-    font-size: 370%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-
-  }
-
-
- 
- }
-
- @media screen and (min-width: 694px) {
- 
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-right: 50px;
-    width: 100%;
-    max-width: 500px;
-    display: inline;
-    float: right;
-  }
-  
-  
-  
-
-  .requestInfo {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.4rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 650px;
-  }
-
-  .requestHeader {
-    font-size: 370%;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-   
-  }
-
- }
-
- @media screen and (min-width: 745px) {
- 
   .logoRequestPage {
     margin-top: 5%;
     position: relative;
@@ -712,48 +314,30 @@ label {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 25px;
-
-  }
-
-  .requestInfo {
-    font-size: 1.3rem;
-    color: white;
-    margin-bottom: 1rem;
-    margin-left: 25px;
-    max-width: 550px;
-  }
-
- }
-
- @media screen and (min-width: 1000px) {
- 
-  .logoRequestPage {
-    margin-top: 5%;
-    position: relative;
-    margin-left: 16px;
-    width: 100%;
-    max-width: 500px;
-    display: inline;
-    float: right;
-  }
   
-  
+  }
+
+}
+
+@media  screen and (min-width: 1070px) and (max-width: 1300px) {
   .requestHeader {
     font-size: 400%;
-    color: white;
+    color:white;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 25px;
+    text-align: center;
+    margin-left: -80px;
+}
 
-  }
-
-  .requestInfo {
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 1rem;
-    margin-left: 25px;
-    max-width: 550px;
-  }
+.logoRequestPage {
+  margin-top: 15%;
+  position: relative;
+  margin-right: 5px;
+  margin-bottom: 1rem;
+  width: 90%;
+  max-width: 490px;
+  display: inline;
+}
 
   form {
     align-items: flex-start;
@@ -761,100 +345,191 @@ label {
     flex-direction: column;
     font-size: 16px;
     margin-left: 25px;
-    margin-top: 2%;
-    width: 50%;
-  }
-  
-      input {
-        width: 50%;
-        height: 35px;
-        padding: 7px;
-        outline: none;
-        border-radius: 5px;
-      }
-  
-      input[type="submit"] {
-        margin-top: 2rem;
-        width: 35%;
-        cursor: pointer;
-        background: rgb(0, 119, 255); 
-        color: white;
-        font-size: 1.2em;
-        font-weight: bold;
-        max-width: 520px;
-        border: none;
-      }
-  
-      textarea {
-        max-width: 100%;
-        width: 50%;
-        max-height: 100px;
-        padding: 50px;
-        outline: none;
-        border-radius: 5px;
-      }
-  
-      label {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        font-size: 1.2em;
-        color: white;
-        font-weight: bold;
-        max-width: 520px;
-      }
-  
-  
-      .logoRequestPage {
-        margin-top: 5%;
-        position: relative;
-        margin-right: 6px;
-        width: 100%;
-        max-width: 800px;
-        display: inline;
-        float: right;
-      }
-
- } */
-
-
-
-
-/* @media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
+    margin-top: 3%;
+    /* width: 100%; */
   }
 
-  .search {
-    padding: 1rem 1.75rem;
+  
+  input {
     width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
 }
 
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
-  }
+textarea {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  padding: 50px;
+  outline: none;
+  border-radius: 5px;
+}
 
-  h1 {
-    font-size: 2rem;
-  }
 
-  .movieContainer {
-    margin-top: 2rem;
-  }
+}
 
-  .movie {
-    width: "100%";
-    margin: 1rem;
-  }
-} */
+@media  screen and (min-width: 641px) and (max-width: 1070px) {
+  
+  .logoRequestPage {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    position: relative;
+    margin-right: 6px;
+    width: 100%;
+    max-width: 600px;
+    display: inline;
+    float: right;
+}
+
+.requestHeader {
+  font-size: 400%;
+  color:white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-left: -80px;
+}
+
+.requestHeader {
+  font-size: 400%;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+.requestInfo {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 25px;
+  max-width: 600px;
+}
+
+input {
+  width: 180%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 180%;
+  max-height: 100px;
+  padding: 50px;
+  outline: none;
+  border-radius: 5px;
+}
+
+}
+
+@media  screen and (min-width: 480px) and (max-width: 641px) {
+
+  .logoRequestPage {
+    position: relative;
+    margin-bottom: 1%;
+    margin-right: 25px;
+    width: 100%;
+    max-width: 400px;
+    display: inline;
+    float: right;
+}
+
+.requestHeader {
+  font-size: 320%;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 12%;
+}
+.requestInfo {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 25px;
+  max-width: 600px;
+}
+
+}
+
+@media  screen and (min-width: 350px) and (max-width: 480px) {
+  .logoRequestPage {
+    position: relative;
+    margin-bottom: 5%;
+    margin-right: 12px;
+    width: 100%;
+    max-width: 300px;
+    display: inline;
+    float: right;
+}
+
+.requestHeader {
+  font-size: 250%;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+}
+
+.requestInfo {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+  margin-left: 25px;
+  max-width: 600px;
+}
+
+input {
+  width: 170%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+
+textarea {
+  max-width: 250%;
+  width: 170%;
+  max-height: 100px;
+  padding: 50px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  width: 174%;
+  cursor: pointer;
+  background: rgb(0, 119, 255);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  max-width: 520px;
+  border: none;
+}
+
+#movieSearh {
+  margin-right: auto;
+  margin-left: 100px;
+  width: 200px;
+  padding: 7px;
+  border-radius: 30px;
+  box-shadow: 0 0 45px 0 #ffffff, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#Icon {
+  width: 10%;
+  color: white;
+  margin-left: -250px;
+  filter: brightness(0) invert(1);
+}
+
+
+}
 

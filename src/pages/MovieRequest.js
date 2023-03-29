@@ -33,6 +33,7 @@ const MovieRequest = () => {
                 <p className="requestInfo">
                     Here at Search4movies we aim to deliver the best service to all our fans. If you cant find your favorite Movie, Anime, or Game feel free to drop us an email with any Movie Request!
                 </p>
+                <div className='FormDesign'>
         <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
             <input type="text" name="user_name" />
@@ -42,6 +43,7 @@ const MovieRequest = () => {
             <textarea name="message" />
             <input type="submit" value="Send" />
         </form> 
+        </div>
         {/* This really should be there but cant figure out why the back ground cuts page in half */}
         <br></br>
         <br></br>

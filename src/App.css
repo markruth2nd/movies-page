@@ -21,8 +21,6 @@ body {
   background: linear-gradient(0deg, #0a0c79 0%, #000000 100%);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: bottom;
-  height: 100vh; */
 }
 
 /* ------------------Nav-Bar------------------ */
@@ -258,9 +256,13 @@ label {
   margin-bottom: 15px;
 }
 
-/* --------------------Media Screens--------------------------- */
 
 /* ---------------- GAMES CSSS ---------------- */
+
+.gameTitle {
+  color: #fff;
+}
+
 .game-container {
   width: 100%;
   margin-top: 3rem;
@@ -284,35 +286,28 @@ label {
 .game-card-body{
   padding: 1.875rem;
   flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
 }
 .game-card-img-top {
   width: 310px;
   height: 400px;
   margin-bottom: 20px;
   padding: 18px 20px;
-
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   border: none;
-
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
 }
 
 
 .game-card-img-top:hover {
   box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
-  /* THE ABOVE AMEND WILL BE A GOOD ADDITION TO THE CSS */
   background-color: rgba(38, 16, 160, 0.817);
   transform: scale(1.05, 1.10);
-  /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
 }
 
-.gameTitle{
-  color: #1717d78e;
-}
 button {
   text-transform: capitalize;
   max-width: 300px;
@@ -403,10 +398,8 @@ button {
   }
   .game-card-img-top:hover {
     box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
-    /* THE ABOVE AMEND WILL BE A GOOD ADDITION TO THE CSS */
     background-color: rgba(38, 16, 160, 0.817);
     transform: scale(1.05, 1.10);
-    /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
   }
 }
 
@@ -464,7 +457,6 @@ button {
     font-size: 16px;
     margin-left: 25px;
     margin-top: 3%;
-    /* width: 100%; */
   }
 
   

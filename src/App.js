@@ -12,10 +12,7 @@ import Navbar from './component/Navbar';
 function App() {
     return (
     <Router>
-<<<<<<< HEAD
-=======
         {/* <Header /> */}
->>>>>>> a20be1ceac8bf9a15c67a93f226ad27997b7e84d
         <Navbar />
         <Routes>
             <Route path="/" element={<Omdb />} />

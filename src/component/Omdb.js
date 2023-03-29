@@ -13,7 +13,7 @@ const Omdb = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        searchMovies("Spiderman");
+        searchMovies("fast and furious");
       }, []);
 
     const searchMovies = async (title) => {

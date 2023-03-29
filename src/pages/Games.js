@@ -24,8 +24,9 @@ const Games = () => {
                 /* the below function is replacing the width & height in the current fetched box_art_url images size with the sizes I want artwork to display in my project*/
                 let newURL = game.box_art_url.replace('{width}', '200').replace('{height}', '200')
                 game.box_art_url = newURL /* this is my new generated url with the sizes I have chosen */
-            })//the below is my state update
+            }) //the below is my state update
             setGames(response.data.data)
+            console.log(finalArray)
         }//the below is calling the fetch data async function I created above
         fetchData()
     },[])

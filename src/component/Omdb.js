@@ -11,17 +11,18 @@ const API_URL = 'http://www.omdbapi.com/?apikey=fbdf1d80'
 const Omdb = () => {
     const [movies, setMovies ] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
-
-    useEffect(() => {
-        searchMovies("fast and furious");
-      }, []);
-
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
 
         setMovies(data.Search);
     }
+    useEffect(() => {
+        
+        searchMovies("fast and furious");
+      }, []);
+
+    
 
     return (
         <div className="app">
@@ -41,8 +42,8 @@ const Omdb = () => {
         {movies?.length > 0
             ? (
             <div className="movieContainer">
-            {movies.map((movie) => (
-                <MovieCard movie={movie} />
+            {movies.map((movie, index) => (
+                <MovieCard movie={movie} key={index} />
             ))}
             </div>
             ) : (

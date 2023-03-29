@@ -40,7 +40,7 @@ const Games = () => {
                     <div className="game-card"> {/* this card will display the box art url as well as a button with a link which will take you the the page where you can view the streams. I will not have enough time to work on the page where to view the stream but the button will at least take you to the link */}
                         <img className="game-card-img-top" src={game.box_art_url}  />
                             <div className="card-body">
-                                    <button className="btn btn-success">
+                                    <button className="btn btn-success">Watch:
                                         <Link className="link" to={{pathname: "game/" + game.name, state: { gameID: game.id}
                                         }}>{game.name} streams{" "} </Link>
                                     </button>

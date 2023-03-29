@@ -51,51 +51,7 @@ body {
   margin-bottom: 0%;
   margin-top: 155px;
 }
-.game-container {
-  width: 100%;
-  margin-top: 3rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.game-card{
-  margin-left: 15px;
-  padding: 1.875rem;
-  background-color: #fff;
-  border: none;
-  border-radius: 0.625rem;
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
-
-}
-.game-card-body{
-  padding: 1.875rem;
-  flex: 1 1 auto;
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
-}
-.game-card-img-top {
-  width: 310px;
-  height: 400px;
-  margin-top: 15px;
-  padding: 10px 20px;
-
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  border: none;
-
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-}
-
-.game-card-img-top:hover {
-  box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
-  /* THE ABOVE AMEND WILL BE A GOOD ADDITION TO THE CSS */
-  background-color: rgba(38, 16, 160, 0.817);
-  transform: scale(1.05, 1.10);
-  /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
-}
 /* --------------------logo-------------------------- */
 
 .logo {
@@ -305,19 +261,37 @@ label {
 /* --------------------Media Screens--------------------------- */
 
 /* ---------------- GAMES CSSS ---------------- */
+.game-container {
+  width: 100%;
+  margin-top: 3rem;
 
-.gameTitle{
-  color: #898bc8a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .game-card{
+  justify-content: center;
   margin-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #0A0B74;
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+}
+
+.game-card-body{
+  padding: 1.875rem;
+  flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
 }
 .game-card-img-top {
   width: 310px;
   height: 400px;
-  margin-top: 15px;
-  padding: 10px 20px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
 
   position: relative;
   border-radius: 12px;
@@ -327,6 +301,7 @@ label {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
 }
 
+
 .game-card-img-top:hover {
   box-shadow: 0px 30px 18px -8px rgba(52, 22, 220, 0.543);
   /* THE ABOVE AMEND WILL BE A GOOD ADDITION TO THE CSS */
@@ -334,10 +309,19 @@ label {
   transform: scale(1.05, 1.10);
   /* THE ABOVE WILL BE A GOOD ADDITION TO THE CSS, I HAVE AMENDED THE SCALE SIZE */
 }
+
+.gameTitle{
+  color: #898bc8a4;
+}
+button {
+  text-transform: capitalize;
+  max-width: 300px;
+}
+
 .link {
   color: rgb(14, 8, 194);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 650;
 }
 .link:hover {
   color: white;

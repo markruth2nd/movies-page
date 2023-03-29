@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/Navbar.css";
+import logo from "../images/logo.png";
 
 
 class Navbar extends Component {
@@ -13,15 +14,21 @@ class Navbar extends Component {
        <>
         <nav>
             <div id="logo">
-            <a href="index.html">Search4Movies</a>
-            </div>
+            <a href="/">  
+                        <div className="logo">
+                            <a href={"/"} className="">
+                                <img className="smallLogo" src={logo} alt="logo" />
+                            </a>
+                        </div>
+                        </a>
+                    </div>
             <div>
                 <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                    <li><a className="active" href="index.html">Home</a></li>
-                    <li><a href="index.html">Comedies</a></li>
-                    <li><a href="index.html">Games</a></li>
-                    <li><a href="index.html">Anime</a></li>
-                    <li><a href="index.html">Movie Request</a></li>
+                    <li><a className="active" href="/">Home</a></li>
+                    <li><a href="/comedies">Comedies</a></li>
+                    <li><a href="/games">Games</a></li>
+                    <li><a href="/anime">Anime</a></li>
+                    <li><a href="/movierequest">Movie Request</a></li>
                 </ul>
             </div>
             <div id="mobile" onClick={this.handleClick}>

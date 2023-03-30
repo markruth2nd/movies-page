@@ -31,7 +31,7 @@ However, as the project came together with all my project team mates, I discover
 
 ### Marlena
 
-Within this project my contribution was: Figma Design, Anime Page, Movie Request Page, Email request functionality, Search Bar and the CSS applied across the site.
+Within this project my contribution was: Figma Design, Anime Page, Movie Request Page, Email request functionality, Search Bar, README in Github and the CSS applied across the site.
 
 The Anime Page is replicated from the Home page, I applied changes to the searchMovies function so that the page automatically loads on Anime selections. 
 
